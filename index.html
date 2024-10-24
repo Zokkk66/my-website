@@ -9,10 +9,6 @@
 </head>
 
 <body>
-    <!-- 添加音频标签，设置自动播放 -->
-    <audio autoplay controls src="media/background - music.mp3">
-        您的浏览器不支持音频标签，请更换浏览器查看。
-    </audio>
     <!-- 文章主体容器 -->
     <article class="article - container">
         <!-- 文章头部 -->
@@ -33,7 +29,13 @@
             </video>
         </section>
     </article>
-    <!-- 引入JavaScript文件（如果有更多交互需求可在这个文件里编写代码） -->
+    <!-- 音频播放按钮 -->
+    <button id="playButton">播放音频</button>
+    <!-- 音频元素 -->
+    <audio id="myAudio" src="media/background - music.mp3">
+        您的浏览器不支持音频标签，请更换浏览器查看。
+    </audio>
+    <!-- 引入JavaScript文件 -->
     <script src="js/main.js"></script>
 </body>
 
