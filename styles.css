@@ -1,3 +1,10 @@
+body {
+    background - image: url('media/background - image.jpg');
+    background - size: cover;
+    background - position: center;
+    background - repeat: no - repeat;
+}
+
 /* 整体文章容器样式 */
 .article - container {
     width: 80%;
