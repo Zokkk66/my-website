@@ -1,49 +1,169 @@
-/* 整体文章容器样式 */
+/* 整体页面布局样式 */
+body {
+    font - family: Arial, sans - serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 头部样式 */
+header {
+    background - color: #24292e;
+    color: white;
+    padding: 10px;
+}
+
+/* 导航栏样式 */
+nav {
+    background - color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text - align: center;
+    padding: 14px 16px;
+    text - decoration: none;
+}
+
+nav a:hover {
+    background - color: #ddd;
+    color: black;
+}
+
+/* 媒体查询，用于响应式导航栏 */
+@media screen and (max - width: 600px) {
+    nav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* 文章容器样式 */
 .article - container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
     background - color: #f9f9f9;
-    border: 1px solid #ccc;
-    /* 设置中文的字体 */
     font - family: "微软雅黑", Arial, sans - serif;
 }
 
-/* 文章标题样式 */
-h1 {
+/* 文章头部标题样式 */
+.article - container header h1 {
     color: #007bff;
     text - align: center;
+    font - weight: bold;
+    margin - bottom: 10px;
 }
 
-/* 作者和日期样式 */
-.author,
-.date {
+/* 文章作者与日期样式 */
+.article - container.author - date {
     text - align: center;
     color: #666;
+    font - size: 14px;
 }
 
-/* 文章内容段落样式 */
-.content p {
+/* 正文段落样式 */
+.article - container.content p {
     line - height: 1.6;
+    font - size: 16px;
     color: #333;
 }
 
-/* 视频样式 */
-video {
+/* 一级标题样式 */
+.article - container.content h2 {
+    font - size: 20px;
+    font - weight: bold;
     margin - top: 20px;
-    display: block;
-    margin - left: auto;
-    margin - right: auto;
 }
 
-/* 播放按钮样式 */
-#playButton {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background - color: #007bff;
-    color: white;
-    border: none;
-    border - radius: 5px;
-    cursor: pointer;
+/* 二级标题样式 */
+.article - container.content h3 {
+    font - size: 18px;
+    font - weight: bold;
+    margin - top: 15px;
 }
+
+/* 图片样式 */
+.article - container.article - image {
+    max - width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+
+/* 图片说明文字样式 */
+.article - container.image - caption {
+    font - size: 14px;
+    color: #666;
+    text - align: center;
+}
+
+/* 底部区域样式 */
+.article - container footer {
+    margin - top: 20px;
+}
+
+.article - container footer.copyright {
+    font - size: 14px;
+    color: #666;
+    text - align: center;
+}
+
+.article - container footer.related - articles {
+    font - size: 14px;
+    color: #666;
+    text - align: center;
+    margin - top: 5px;
+}
+
+/* 交互元素样式 */
+.article - container.interaction - buttons {
+    display: flex;
+    justify - content: space - around;
+    margin - top: 20px;
+}
+
+.article - container.share - buttons img,
+.article - container.like - watch - button img,
+.article - container.comment - button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 视频样式 */
+.article - container video {
+    margin - top: 10px;
+    margin - bottom: 10px;
+}
+
+/* 音频样式 */
+.article - container audio {
+    margin - top: 10px;
+    margin - bottom: 10px;
+}
+
+/* 项目样式 */
+.project {
+    border: 1px solid #ccc;
+    border - radius: 5px;
+    padding: 10px;
+    margin - bottom: 10px;
+}
+
+/* 自定义彩色字体样式，这里以红色为例 */
+.colored - text {
+    color: red;
+}
+
+/* 表格样式 */
+table {
+    border - collapse: collapse;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    }
