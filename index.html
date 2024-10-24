@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF - 8">
     <meta name="viewport" content="width=device - width, initial - scale = 1.0">
-    <title>仿微信公众号页面</title>
+    <title>仿微信公众号页面（含自动播放音频和背景图片）</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <!-- 音频元素 -->
+    <audio id="myAudio" src="media/your - audio - file.mp3" autoplay>
+        您的浏览器不支持音频标签，请更换浏览器查看。
+    </audio>
     <!-- 文章主体容器 -->
     <article class="article - container">
         <!-- 文章头部 -->
@@ -29,8 +33,13 @@
             </video>
         </section>
     </article>
-    <!-- 引入JavaScript文件（如果有更多交互需求可在这个文件里编写代码） -->
-    <script src="js/main.js"></script>
+    <!-- 确保音频元素存在 -->
+    <script>
+        if (document.getElementById('myAudio')) {
+            // 自动播放音频
+            document.getElementById('myAudio').play();
+        }
+    </script>
 </body>
 
 </html>
