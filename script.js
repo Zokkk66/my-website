@@ -1,0 +1,1 @@
+function search() { var searchTerm = document.getElementById('search-box').value; alert("搜索功能尚未实现。您搜索的内容是：" + searchTerm); } function addToCart(productName, price) { alert(productName + " 已加入购物车。价格: $" + price); }
